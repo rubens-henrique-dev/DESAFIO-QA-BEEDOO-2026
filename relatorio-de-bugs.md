@@ -91,3 +91,20 @@ A página de cadastro deveria carregar normalmente ao acessar diretamente pela U
 
 ### Severidade
 Média (problema de navegação/roteamento)
+
+## BUG 006 - Sistema permite cadastrar curso sem preencher o título do curso
+
+### Passos para reproduzir
+1. Acessar a página de cadastro de curso
+2. Deixar o campo "Nome do curso" em branco
+3. Preencher os demais campos obrigatórios
+4. Clicar em "Cadastrar curso"
+
+### Resultado atual
+O sistema aceita o cadastro e cria o curso mesmo sem o preenchimento do título.
+
+### Resultado esperado
+O sistema deveria impedir o cadastro e exibir uma mensagem informando que o campo "Nome do curso" é obrigatório.
+
+### Severidade
+Alta (falha de validação de campo obrigatório)
