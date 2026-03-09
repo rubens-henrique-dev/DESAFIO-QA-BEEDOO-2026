@@ -74,3 +74,20 @@ O sistema deveria impedir o cadastro e exibir uma mensagem informando que a data
 
 ### Severidade
 Alta (violação de regra de negócio)
+
+## BUG 005 - Página de cadastro retorna "Page not found" ao acessar diretamente pela URL
+
+### Passos para reproduzir
+1. Acessar a aplicação
+2. Copiar a URL da página de cadastro de cursos
+3. Abrir uma nova aba no navegador
+4. Colar a URL diretamente e pressionar Enter
+
+### Resultado atual
+A aplicação exibe a mensagem "Page not found".
+
+### Resultado esperado
+A página de cadastro deveria carregar normalmente ao acessar diretamente pela URL.
+
+### Severidade
+Média (problema de navegação/roteamento)
