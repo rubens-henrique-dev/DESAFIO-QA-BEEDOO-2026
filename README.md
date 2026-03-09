@@ -77,3 +77,11 @@ Quando o tipo de curso selecionado é **Presencial**, o sistema exibe o campo:
 - Endereço
 
 Esse comportamento indica que o sistema possui lógica dinâmica baseada no tipo de curso selecionado, sendo um ponto importante para validação durante os testes.
+
+## Bugs encontrados
+
+Durante a execução dos testes foram identificados bugs na aplicação.
+
+O relatório completo pode ser acessado em:
+
+relatorio-de-bugs.md
