@@ -57,3 +57,20 @@ Alta (inconsistência entre a ação executada e o estado real do sistema)
 
 ### Evidência
 Print da tela mostrando o curso ainda presente após a mensagem de exclusão.
+
+## BUG 004 - Sistema permite cadastrar curso com data final anterior à data inicial
+
+### Passos para reproduzir
+1. Acessar a página de cadastro de curso
+2. Preencher os campos obrigatórios
+3. Inserir uma data de início posterior à data de fim (exemplo: início 10/03/2026 e fim 09/03/2026)
+4. Clicar em "Cadastrar curso"
+
+### Resultado atual
+O sistema aceita o cadastro e cria o curso mesmo com a data final anterior à data inicial.
+
+### Resultado esperado
+O sistema deveria impedir o cadastro e exibir uma mensagem informando que a data de fim não pode ser anterior à data de início.
+
+### Severidade
+Alta (violação de regra de negócio)
