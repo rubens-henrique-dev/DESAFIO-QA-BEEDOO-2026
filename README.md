@@ -63,3 +63,17 @@ A estratégia de testes adotada foi baseada em:
 - Cenários negativos
 - Validação de campos
 - Testes exploratórios para identificar comportamentos inesperados
+
+## Comportamento condicional identificado
+
+Durante a exploração do formulário foi identificado um comportamento condicional no campo "Tipo de curso".
+
+Quando o tipo de curso selecionado é **Online**, o sistema exibe o campo:
+
+- Link de inscrição
+
+Quando o tipo de curso selecionado é **Presencial**, o sistema exibe o campo:
+
+- Endereço
+
+Esse comportamento indica que o sistema possui lógica dinâmica baseada no tipo de curso selecionado, sendo um ponto importante para validação durante os testes.
