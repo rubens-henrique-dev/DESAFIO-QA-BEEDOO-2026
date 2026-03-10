@@ -97,3 +97,15 @@ https://docs.google.com/spreadsheets/d/1muy70_0OjjlEijbqZmdo530yEtq5_sTOIsrhLn2v
 As evidências da execução dos testes podem ser acessadas no link abaixo:
 
 https://drive.google.com/drive/folders/13snNzVYUu0VCYUSTn9xsJiLZOFJGCrOS?usp=sharing
+
+## Melhorias sugeridas
+
+Durante a execução dos testes, foram identificadas algumas oportunidades de melhoria na aplicação:
+
+- Implementar validação obrigatória para campos essenciais como nome do curso.
+- Validar regras de negócio para datas (data de fim não pode ser anterior à data de início).
+- Garantir que o número de vagas seja um valor positivo maior que zero.
+- Implementar validação de campos condicionais (link de inscrição para cursos online e endereço para cursos presenciais).
+- Ajustar o comportamento da mensagem de sucesso para que permaneça visível por tempo suficiente.
+- Corrigir a funcionalidade de exclusão de cursos.
+- Garantir que rotas da aplicação possam ser acessadas diretamente pela URL.
