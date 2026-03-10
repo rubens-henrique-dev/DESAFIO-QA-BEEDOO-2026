@@ -84,7 +84,7 @@ Durante a execução dos testes foram identificados bugs na aplicação.
 
 O relatório completo pode ser acessado em:
 
-relatorio-de-bugs.md
+[Relatório de bugs](./relatorio-de-bugs.md)
 
 ## Casos de teste
 
