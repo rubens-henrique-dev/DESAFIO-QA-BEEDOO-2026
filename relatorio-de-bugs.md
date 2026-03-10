@@ -108,3 +108,71 @@ O sistema deveria impedir o cadastro e exibir uma mensagem informando que o camp
 
 ### Severidade
 Alta (falha de validação de campo obrigatório)
+
+## BUG 007 - Sistema permite cadastrar curso com número de vagas negativo
+
+### Passos para reproduzir
+1. Acessar a página de cadastro de curso
+2. Preencher os campos obrigatórios
+3. Inserir um número negativo no campo "Número de vagas" (exemplo: -5)
+4. Clicar em "Cadastrar curso"
+
+### Resultado atual
+O sistema aceita o cadastro e cria o curso com número de vagas negativo.
+
+### Resultado esperado
+O sistema deveria impedir o cadastro e informar que o número de vagas deve ser um valor positivo.
+
+### Severidade
+Alta (falha de validação de regra de negócio)
+
+## BUG 008 - Sistema permite cadastrar curso online sem preencher o link de inscrição
+
+### Passos para reproduzir
+1. Acessar a página de cadastro de curso
+2. Selecionar o tipo de curso "Online"
+3. Não preencher o campo "Link de inscrição"
+4. Clicar em "Cadastrar curso"
+
+### Resultado atual
+O sistema permite o cadastro do curso mesmo sem o link de inscrição.
+
+### Resultado esperado
+O sistema deveria impedir o cadastro e exigir o preenchimento do link de inscrição para cursos online.
+
+### Severidade
+Alta (falha de validação de campo obrigatório)
+
+## BUG 009 - Sistema permite cadastrar curso presencial sem preencher o endereço
+
+### Passos para reproduzir
+1. Acessar a página de cadastro de curso
+2. Selecionar o tipo de curso "Presencial"
+3. Não preencher o campo "Endereço"
+4. Clicar em "Cadastrar curso"
+
+### Resultado atual
+O sistema permite o cadastro do curso mesmo sem o preenchimento do endereço.
+
+### Resultado esperado
+O sistema deveria impedir o cadastro e exigir o preenchimento do endereço para cursos presenciais.
+
+### Severidade
+Alta (falha de validação de campo obrigatório)
+
+## BUG 010 - Sistema permite cadastrar curso com número de vagas igual a zero
+
+### Passos para reproduzir
+1. Acessar a página de cadastro de curso
+2. Preencher os campos obrigatórios
+3. Inserir "0" no campo "Número de vagas"
+4. Clicar em "Cadastrar curso"
+
+### Resultado atual
+O sistema permite o cadastro do curso com número de vagas igual a zero.
+
+### Resultado esperado
+O sistema deveria impedir o cadastro e exigir que o número de vagas seja maior que zero.
+
+### Severidade
+Média (falha de validação de regra de negócio)
