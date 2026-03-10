@@ -54,7 +54,32 @@ Os pontos considerados mais críticos durante a análise foram:
 
 ---
 
-## 5. Estratégia de testes
+## 5. Explicação do raciocínio durante a análise
+
+Durante a exploração inicial da aplicação, o objetivo foi compreender o funcionamento geral do sistema e identificar suas principais funcionalidades.
+
+Foi identificado que a aplicação possui dois fluxos principais:
+- Cadastro de cursos
+- Listagem de cursos cadastrados
+
+A partir dessa análise inicial, o foco foi direcionado para o formulário de cadastro de cursos, buscando validar possíveis regras de negócio e comportamentos esperados do sistema.
+
+Durante a exploração foram observados pontos importantes para teste, como:
+
+- Validação de campos obrigatórios
+- Regras de negócio envolvendo datas (data de início e data de fim)
+- Validação do número de vagas
+- Comportamento condicional baseado no tipo de curso (online ou presencial)
+- Persistência das informações na lista de cursos
+- Funcionamento da exclusão de cursos
+
+Com base nesses pontos foram criados cenários de teste positivos e negativos, permitindo validar tanto o fluxo principal quanto possíveis falhas na aplicação.
+
+A execução desses testes resultou na identificação de comportamentos inesperados, que foram documentados no relatório de bugs.
+
+---
+
+## 6. Estratégia de testes
 
 A estratégia de testes adotada foi baseada em:
 
@@ -64,7 +89,9 @@ A estratégia de testes adotada foi baseada em:
 - Validação de campos
 - Testes exploratórios para identificar comportamentos inesperados
 
-## Comportamento condicional identificado
+---
+
+## 7. Comportamento condicional identificado
 
 Durante a exploração do formulário foi identificado um comportamento condicional no campo "Tipo de curso".
 
@@ -78,6 +105,8 @@ Quando o tipo de curso selecionado é **Presencial**, o sistema exibe o campo:
 
 Esse comportamento indica que o sistema possui lógica dinâmica baseada no tipo de curso selecionado, sendo um ponto importante para validação durante os testes.
 
+---
+
 ## Bugs encontrados
 
 Durante a execução dos testes foram identificados bugs na aplicação.
@@ -86,17 +115,23 @@ O relatório completo pode ser acessado em:
 
 [Relatório de bugs](./relatorio-de-bugs.md)
 
+---
+
 ## Casos de teste
 
 Planilha com os cenários e casos de teste executados:
 
 https://docs.google.com/spreadsheets/d/1muy70_0OjjlEijbqZmdo530yEtq5_sTOIsrhLn2vkzc/edit?usp=sharing
 
+---
+
 ## Evidências dos testes
 
 As evidências da execução dos testes podem ser acessadas no link abaixo:
 
 https://drive.google.com/drive/folders/13snNzVYUu0VCYUSTn9xsJiLZOFJGCrOS?usp=sharing
+
+---
 
 ## Melhorias sugeridas
 
@@ -109,6 +144,8 @@ Durante a execução dos testes, foram identificadas algumas oportunidades de me
 - Ajustar o comportamento da mensagem de sucesso para que permaneça visível por tempo suficiente.
 - Corrigir a funcionalidade de exclusão de cursos.
 - Garantir que rotas da aplicação possam ser acessadas diretamente pela URL.
+
+---
 
 - ## Estrutura da entrega
 
