@@ -109,3 +109,10 @@ Durante a execução dos testes, foram identificadas algumas oportunidades de me
 - Ajustar o comportamento da mensagem de sucesso para que permaneça visível por tempo suficiente.
 - Corrigir a funcionalidade de exclusão de cursos.
 - Garantir que rotas da aplicação possam ser acessadas diretamente pela URL.
+
+- ## Estrutura da entrega
+
+- README com análise da aplicação e estratégia de testes
+- Relatório de bugs documentado no arquivo [Relatório de bugs](./relatorio-de-bugs.md)
+- Planilha com cenários e casos de teste
+- Pasta com evidências de execução dos testes
