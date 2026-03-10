@@ -85,3 +85,9 @@ Durante a execução dos testes foram identificados bugs na aplicação.
 O relatório completo pode ser acessado em:
 
 relatorio-de-bugs.md
+
+## Casos de teste
+
+Planilha com os cenários e casos de teste executados:
+
+https://docs.google.com/spreadsheets/d/1muy70_0OjjlEijbqZmdo530yEtq5_sTOIsrhLn2vkzc/edit?usp=sharing
