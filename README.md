@@ -91,3 +91,9 @@ relatorio-de-bugs.md
 Planilha com os cenários e casos de teste executados:
 
 https://docs.google.com/spreadsheets/d/1muy70_0OjjlEijbqZmdo530yEtq5_sTOIsrhLn2vkzc/edit?usp=sharing
+
+## Evidências dos testes
+
+As evidências da execução dos testes podem ser acessadas no link abaixo:
+
+https://drive.google.com/drive/folders/13snNzVYUu0VCYUSTn9xsJiLZOFJGCrOS?usp=sharing
